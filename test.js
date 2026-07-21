@@ -319,7 +319,7 @@
 
   function cineRenderLoop() {
     // Lerp scroll and mouse (higher value = snappier, instantly follows mouse wheel)
-    cineCurrentScroll = lerp(cineCurrentScroll, cineTargetScroll, 0.15);
+    cineCurrentScroll = cineTargetScroll;
     cineMouseX = lerp(cineMouseX, cineTargetMouseX, 0.05);
     cineMouseY = lerp(cineMouseY, cineTargetMouseY, 0.05);
 
@@ -362,8 +362,8 @@
       heroContent.style.opacity = 1 - heroProg;
     }
     if (heroMeta) {
-      heroMeta.style.transform = `translate3d(0, ${-150 * heroProg}px, 0)`;
-      heroMeta.style.opacity = 1 - heroProg;
+      heroMeta.style.transform = `translate3d(0, ${-40 * heroProg}px, 0)`;
+      heroMeta.style.opacity = 1 - Math.min(1, heroProg * 1.5);
     }
     if (scrollHint) {
       scrollHint.style.transform = `translate3d(-50%, ${-100 * heroProg}px, 0)`;
