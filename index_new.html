@@ -83,7 +83,7 @@
   nav.scrolled{background:rgba(12,12,12,.35);backdrop-filter:blur(20px);border-color:rgba(255,255,255,.08)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
   .logo{font-family:var(--font-display);font-weight:800;font-size:17px;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
-  .logo-img{width:30px;height:30px;border-radius:9px;object-fit:cover;box-shadow:0 0 24px rgba(91,140,255,.35)}
+  .logo-mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#2E5FE8);display:grid;place-items:center;font-size:13px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(91,140,255,.35)}
   .nav-links{display:flex;gap:34px;font-size:14px;color:#E5E7EB;text-shadow:0 2px 8px rgba(0,0,0,0.6)}
   .nav-links a{position:relative;transition:color .3s}
   .nav-links a:hover{color:#fff}
@@ -465,7 +465,7 @@
 <!-- ================= NAV ================= -->
 <nav id="nav">
   <div class="container nav-inner">
-    <a href="#hero" class="logo"><img src="./public/logo/logo.png" alt="Logo" class="logo-img" />Vamshi<span style="color:var(--accent)">.</span>Dev</a>
+    <a href="#hero" class="logo"><span class="logo-mark">V</span>Vamshi<span style="color:var(--accent)">.</span>Dev</a>
     <div class="nav-links">
       <a href="#work">Work</a>
       <a href="#about">About</a>
@@ -703,7 +703,7 @@
 <section id="experience">
   <div class="container">
     <div class="eyebrow reveal">Experience</div>
-    <h2 class="reveal">Where I've built.</h2>
+    <h2 class="reveal" style="font-size:clamp(40px,7vw,85px);line-height:1.05;letter-spacing:-.03em;margin-bottom:24px">Where I've <span style="color:var(--accent)">built.</span></h2>
     <div class="timeline">
       <div class="exp reveal">
         <div class="when">Present</div>

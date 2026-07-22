@@ -55,7 +55,7 @@
   });
 
   /* ---------- Cinematic Engine ---------- */
-  const TOTAL_FRAMES = 54;
+  const TOTAL_FRAMES = 89;
   const framesContainer = document.getElementById('cinematic-frames');
   const canvasElement = document.getElementById('cinematic-canvas');
   const cineCtx = canvasElement.getContext('2d', { alpha: false }); // Disable alpha for max performance
@@ -72,7 +72,7 @@
   for(let i = 1; i <= TOTAL_FRAMES; i++) {
     const img = new Image();
     const frameNum = String(i).padStart(3, '0');
-    img.src = `public/ezgif-frame-${frameNum}.jpg`;
+    img.src = `public/public2/ezgif-frame-${frameNum}.png`;
     frameImgs.push(img);
     img.onload = () => loadedCount++;
     img.onerror = () => loadedCount++;
