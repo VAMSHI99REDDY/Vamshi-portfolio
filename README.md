@@ -4,7 +4,7 @@ A high-performance, cinematic developer portfolio featuring a fully custom 3D we
 
 ## Live Website 🌐
 
-**👉 View Live: [https://vamshi-portfolio.vercel.app](https://vamshi-portfolio.vercel.app) 👈** *(Update this link to your actual Vercel deployment URL if different)*
+**👉 View Live:(https://vamshi-portfolio-nu.vercel.app/) 👈** *(Update this link to your actual Vercel deployment URL if different)*
 
 ## Features ✨
 
